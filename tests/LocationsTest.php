@@ -8,7 +8,7 @@ use Illuminate\Support\Facades\Schema;
 class LocationsTest extends BaseTestCase
 {
     /**
-     * @var \Caffeinated\Modules\Repositories\Repository
+     * @var \Uchup07\Modules\Repositories\Repository
      */
     protected $repository;
 

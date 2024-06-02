@@ -28,9 +28,9 @@ class GeneratorServiceProvider extends ServiceProvider
             'command.make.module.policy'     => \Uchup07\Modules\Console\Generators\MakePolicyCommand::class,
             'command.make.module.provider'   => \Uchup07\Modules\Console\Generators\MakeProviderCommand::class,
             'command.make.module.request'    => \Uchup07\Modules\Console\Generators\MakeRequestCommand::class,
-            'command.make.module.seeder'     => \Caffeinated\Modules\Console\Generators\MakeSeederCommand::class,
-            'command.make.module.test'       => \Caffeinated\Modules\Console\Generators\MakeTestCommand::class,
-            'command.make.module.job'        => \Caffeinated\Modules\Console\Generators\MakeJobCommand::class,
+            'command.make.module.seeder'     => \Uchup07\Modules\Console\Generators\MakeSeederCommand::class,
+            'command.make.module.test'       => \Uchup07\Modules\Console\Generators\MakeTestCommand::class,
+            'command.make.module.job'        => \Uchup07\Modules\Console\Generators\MakeJobCommand::class,
         ];
 
         foreach ($generators as $slug => $class) {

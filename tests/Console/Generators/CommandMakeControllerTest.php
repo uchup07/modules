@@ -1,8 +1,8 @@
 <?php
 
-namespace Caffeinated\Modules\Tests\Commands\Generators;
+namespace Uchup07\Modules\Tests\Commands\Generators;
 
-use Caffeinated\Modules\Tests\BaseTestCase;
+use Uchup07\Modules\Tests\BaseTestCase;
 use Spatie\Snapshots\MatchesSnapshots;
 
 class CommandMakeControllerTest extends BaseTestCase

@@ -4,7 +4,7 @@ namespace Uchup07\Modules\Repositories;
 
 use Exception;
 use Illuminate\Support\Str;
-use Caffeinated\Modules\Contracts\Repository as RepositoryContract;
+use Uchup07\Modules\Contracts\Repository as RepositoryContract;
 use Illuminate\Config\Repository as Config;
 use Illuminate\Filesystem\Filesystem;
 

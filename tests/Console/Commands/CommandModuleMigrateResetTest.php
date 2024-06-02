@@ -1,8 +1,8 @@
 <?php
 
-namespace Caffeinated\Modules\Tests\Commands\Commands;
+namespace Uchup07\Modules\Tests\Commands\Commands;
 
-use Caffeinated\Modules\Tests\BaseTestCase;
+use Uchup07\Modules\Tests\BaseTestCase;
 
 class CommandModuleMigrateResetTest extends BaseTestCase
 {

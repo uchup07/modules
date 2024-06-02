@@ -138,7 +138,7 @@ class ConsoleServiceProvider extends ServiceProvider
     protected function registerSeedCommand()
     {
         $this->app->singleton('command.module.seed', function ($app) {
-            return new \Caffeinated\Modules\Console\Commands\ModuleSeedCommand($app['modules']);
+            return new \Uchup07\Modules\Console\Commands\ModuleSeedCommand($app['modules']);
         });
 
         $this->commands('command.module.seed');

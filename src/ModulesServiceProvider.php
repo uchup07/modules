@@ -3,10 +3,10 @@
 namespace Uchup07\Modules;
 
 use Illuminate\Support\ServiceProvider;
-use Caffeinated\Modules\Contracts\Repository;
-use Caffeinated\Modules\Providers\BladeServiceProvider;
-use Caffeinated\Modules\Providers\ConsoleServiceProvider;
-use Caffeinated\Modules\Providers\GeneratorServiceProvider;
+use Uchup07\Modules\Contracts\Repository;
+use Uchup07\Modules\Providers\BladeServiceProvider;
+use Uchup07\Modules\Providers\ConsoleServiceProvider;
+use Uchup07\Modules\Providers\GeneratorServiceProvider;
 
 class ModulesServiceProvider extends ServiceProvider
 {
