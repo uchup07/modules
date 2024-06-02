@@ -1,10 +1,10 @@
 <?php
 
-namespace Caffeinated\Modules\Console\Commands;
+namespace Uchup07\Modules\Console\Commands;
 
 use Illuminate\Console\Command;
-use Caffeinated\Modules\RepositoryManager;
-use Caffeinated\Modules\Repositories\Repository;
+use Uchup07\Modules\RepositoryManager;
+use Uchup07\Modules\Repositories\Repository;
 use Symfony\Component\Console\Input\InputOption;
 use Symfony\Component\Console\Input\InputArgument;
 
@@ -84,7 +84,7 @@ class ModuleSeedCommand extends Command
      * Seed the specific module.
      *
      * @param string $slug
-     * @param \Caffeinated\Modules\Repositories\Repository $repository
+     * @param \Uchup07\Modules\Repositories\Repository $repository
      *
      * @return void
      */

@@ -78,6 +78,6 @@ return [
      */
 
     'drivers' => [
-        'local' => 'Caffeinated\Modules\Repositories\LocalRepository',
+        'local' => 'Uchup07\Modules\Repositories\LocalRepository',
     ],
 ];

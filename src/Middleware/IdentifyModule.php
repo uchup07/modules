@@ -1,21 +1,21 @@
 <?php
 
-namespace Caffeinated\Modules\Middleware;
+namespace Uchup07\Modules\Middleware;
 
-use Caffeinated\Modules\RepositoryManager;
+use Uchup07\Modules\RepositoryManager;
 use Closure;
 
 class IdentifyModule
 {
     /**
-     * @var Caffeinated\Modules
+     * @var Uchup07\Modules
      */
     protected $module;
 
     /**
      * Create a new IdentifyModule instance.
      *
-     * @param Caffeinated\Modules $module
+     * @param Uchup07\Modules $module
      */
     public function __construct(RepositoryManager $module)
     {

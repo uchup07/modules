@@ -1,6 +1,6 @@
 <?php
 
-namespace Caffeinated\Modules;
+namespace Uchup07\Modules;
 
 use Illuminate\Support\ServiceProvider;
 use Caffeinated\Modules\Contracts\Repository;

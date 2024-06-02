@@ -1,6 +1,6 @@
 <?php
 
-namespace Caffeinated\Modules\Tests;
+namespace Uchup07\Modules\Tests;
 
 use Illuminate\Support\Facades\File;
 use Illuminate\Support\Facades\Schema;

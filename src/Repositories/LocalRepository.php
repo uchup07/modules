@@ -1,6 +1,6 @@
 <?php
 
-namespace Caffeinated\Modules\Repositories;
+namespace Uchup07\Modules\Repositories;
 
 use Illuminate\Support\Str;
 

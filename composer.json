@@ -1,5 +1,5 @@
 {
-    "name": "caffeinated/modules",
+    "name": "uchup07/modules",
     "description": "Laravel Modules",
     "keywords": ["modules", "laravel", "caffeinated"],
     "license": "MIT",
@@ -26,12 +26,12 @@
             "src/Support/helpers.php"
         ],
         "psr-4": {
-            "Caffeinated\\Modules\\": "src/"
+            "Uchup07\\Modules\\": "src/"
         }
     },
     "autoload-dev": {
         "psr-4": {
-            "Caffeinated\\Modules\\Tests\\": "tests"
+            "Uchup07\\Modules\\Tests\\": "tests"
         }
     },
     "suggest": {
@@ -40,10 +40,10 @@
     "extra": {
         "laravel": {
             "providers": [
-                "Caffeinated\\Modules\\ModulesServiceProvider"
+                "Uchup07\\Modules\\ModulesServiceProvider"
             ],
             "aliases": {
-                "Module": "Caffeinated\\Modules\\Facades\\Module"
+                "Module": "Uchup07\\Modules\\Facades\\Module"
             }
         }
     }

@@ -1,13 +1,13 @@
 <?php
 
-namespace Caffeinated\Modules\Console\Commands;
+namespace Uchup07\Modules\Console\Commands;
 
 use Illuminate\Console\Command;
 use Illuminate\Console\ConfirmableTrait;
-use Caffeinated\Modules\RepositoryManager;
+use Uchup07\Modules\RepositoryManager;
 use Illuminate\Database\Migrations\Migrator;
-use Caffeinated\Modules\Traits\MigrationTrait;
-use Caffeinated\Modules\Repositories\Repository;
+use Uchup07\Modules\Traits\MigrationTrait;
+use Uchup07\Modules\Repositories\Repository;
 use Symfony\Component\Console\Input\InputOption;
 use Symfony\Component\Console\Input\InputArgument;
 
@@ -79,7 +79,7 @@ class ModuleMigrateRollbackCommand extends Command
     /**
      * Get all of the migration paths.
      *
-     * @param \Caffeinated\Modules\Repositories\Repository $repository
+     * @param \Uchup07\Modules\Repositories\Repository $repository
      *
      * @return array
      */

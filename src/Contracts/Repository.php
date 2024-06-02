@@ -1,6 +1,6 @@
 <?php
 
-namespace Caffeinated\Modules\Contracts;
+namespace Uchup07\Modules\Contracts;
 
 interface Repository
 {

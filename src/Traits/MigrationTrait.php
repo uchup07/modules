@@ -1,6 +1,6 @@
 <?php
 
-namespace Caffeinated\Modules\Traits;
+namespace Uchup07\Modules\Traits;
 
 trait MigrationTrait
 {
