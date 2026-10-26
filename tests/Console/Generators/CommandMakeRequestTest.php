@@ -2,6 +2,7 @@
 
 namespace Uchup07\Modules\Tests\Commands\Generators;
 
+use PHPUnit\Framework\Attributes\Test;
 use Uchup07\Modules\Tests\BaseTestCase;
 use Spatie\Snapshots\MatchesSnapshots;
 
@@ -21,6 +22,7 @@ class CommandMakeRequestTest extends BaseTestCase
     }
 
     /** @test */
+    #[Test]
     public function it_can_generate_a_new_request_with_default_module_namespace()
     {
         $this->artisan('make:module:request', ['slug' => 'request', 'name' => 'DefaultRequest']);
@@ -31,6 +33,7 @@ class CommandMakeRequestTest extends BaseTestCase
     }
 
     /** @test */
+    #[Test]
     public function it_can_generate_a_new_request_with_custom_module_namespace()
     {
         $this->app['config']->set("modules.locations.$this->default.namespace", 'App\\CustomRequestNamespace\\');

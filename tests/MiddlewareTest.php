@@ -2,6 +2,7 @@
 
 namespace Uchup07\Modules\Tests;
 
+use PHPUnit\Framework\Attributes\Test;
 class MiddlewareTest extends BaseTestCase
 {
     protected $finder;
@@ -16,6 +17,7 @@ class MiddlewareTest extends BaseTestCase
     }
 
     /** @test */
+    #[Test]
     public function it_can_check_if_it_has_invalid_module_with_identify_module_middleware()
     {
         $this->app['router']->aliasMiddleware('module', \Uchup07\Modules\Middleware\IdentifyModule::class);
@@ -43,6 +45,7 @@ class MiddlewareTest extends BaseTestCase
     }
 
     /** @test */
+    #[Test]
     public function it_can_check_if_it_has_no_identify_module_middleware()
     {
         $this->app['router']->get('has-no-identify-middleware', function () {
@@ -57,6 +60,7 @@ class MiddlewareTest extends BaseTestCase
     }
 
     /** @test */
+    #[Test]
     public function it_can_check_if_it_has_valid_module_with_identify_module_middleware()
     {
         $this->app['router']->aliasMiddleware('module', \Uchup07\Modules\Middleware\IdentifyModule::class);

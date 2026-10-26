@@ -2,6 +2,7 @@
 
 namespace Uchup07\Modules\Tests\Commands\Commands;
 
+use PHPUnit\Framework\Attributes\Test;
 use Uchup07\Modules\Tests\BaseTestCase;
 
 class CommandModuleMigrateRollbackTest extends BaseTestCase
@@ -18,6 +19,7 @@ class CommandModuleMigrateRollbackTest extends BaseTestCase
     }
 
     /** @test */
+    #[Test]
     public function it_can_migrate_rollback_a_module()
     {
         $this->assertFalse(\Schema::hasTable('CustomCreateMigrationRollbackTable'));

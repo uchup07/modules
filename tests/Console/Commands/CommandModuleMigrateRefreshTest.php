@@ -2,6 +2,7 @@
 
 namespace Uchup07\Modules\Tests\Commands\Commands;
 
+use PHPUnit\Framework\Attributes\Test;
 use Uchup07\Modules\Tests\BaseTestCase;
 
 class CommandModuleMigrateRefreshTest extends BaseTestCase
@@ -18,6 +19,7 @@ class CommandModuleMigrateRefreshTest extends BaseTestCase
     }
 
     /** @test */
+    #[Test]
     public function it_can_migrate_refresh_a_module()
     {
         $this->assertFalse(\Schema::hasTable('CustomCreateMigrationRefreshTable'));

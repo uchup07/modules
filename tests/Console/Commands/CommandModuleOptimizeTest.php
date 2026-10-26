@@ -2,6 +2,7 @@
 
 namespace Uchup07\Modules\Tests\Commands\Commands;
 
+use PHPUnit\Framework\Attributes\Test;
 use Uchup07\Modules\Tests\BaseTestCase;
 
 class CommandModuleOptimizeTest extends BaseTestCase
@@ -18,6 +19,7 @@ class CommandModuleOptimizeTest extends BaseTestCase
     }
 
     /** @test */
+    #[Test]
     public function it_can_optimize_a_module()
     {
         $before = file_get_contents(storage_path('app/modules/app.json'));

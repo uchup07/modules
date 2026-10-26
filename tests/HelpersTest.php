@@ -2,6 +2,7 @@
 
 namespace Uchup07\Modules\Tests;
 
+use PHPUnit\Framework\Attributes\Test;
 class HelpersTest extends BaseTestCase
 {
     protected $finder;
@@ -16,12 +17,14 @@ class HelpersTest extends BaseTestCase
     }
 
     /** @test */
+    #[Test]
     public function it_can_get_module_path()
     {
         $this->assertSame(base_path().'/modules/Helper', module_path('helper'));
     }
 
     /** @test */
+    #[Test]
     public function it_can_get_module_path_files()
     {
         $this->assertSame(base_path().'/modules/Helper/Database', module_path('helper', 'Database'));
@@ -37,6 +40,7 @@ class HelpersTest extends BaseTestCase
     }
 
     /** @test */
+    #[Test]
     public function it_can_get_module_class()
     {
         $this->assertSame('App\Modules\Helper\Database\Factories', module_class('helper', 'Database\\Factories'));

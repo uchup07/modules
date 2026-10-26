@@ -2,6 +2,7 @@
 
 namespace Uchup07\Modules\Tests\Commands\Commands;
 
+use PHPUnit\Framework\Attributes\Test;
 use Uchup07\Modules\Tests\BaseTestCase;
 
 class CommandModuleEnableTest extends BaseTestCase
@@ -18,6 +19,7 @@ class CommandModuleEnableTest extends BaseTestCase
     }
 
     /** @test */
+    #[Test]
     public function it_can_enable_an_disabled_module()
     {
         $this->artisan('module:disable', ['slug' => 'enable']);
@@ -34,6 +36,7 @@ class CommandModuleEnableTest extends BaseTestCase
     }
 
     /** @test */
+    #[Test]
     public function it_can_disable_a_enabled_module()
     {
         $this->artisan('module:enable', ['slug' => 'enable']);

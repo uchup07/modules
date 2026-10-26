@@ -3,6 +3,7 @@
 namespace Uchup07\Modules\Console\Commands;
 
 use Illuminate\Console\Command;
+use Illuminate\Support\Str;
 use Illuminate\Filesystem\Filesystem;
 use Illuminate\Console\ConfirmableTrait;
 use Uchup07\Modules\RepositoryManager;
@@ -120,8 +121,13 @@ class ModuleMigrateResetCommand extends Command
      */
     protected function runDown($file, $migration)
     {
-        $file     = $this->migrator->getMigrationName($file);
-        $instance = $this->migrator->resolve($file);
+        $path = $file;
+        $file = $this->migrator->getMigrationName($path);
+
+        // Laravel 9+ stubs generate anonymous migrations, which can't be resolved by class name.
+        $instance = class_exists(Str::studly(implode('_', array_slice(explode('_', $file), 4))))
+            ? $this->migrator->resolve($file)
+            : $this->migrator->getFilesystem()->getRequire($path);
 
         $instance->down();
 

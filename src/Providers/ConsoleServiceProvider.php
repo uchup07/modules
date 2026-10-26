@@ -110,7 +110,9 @@ class ConsoleServiceProvider extends ServiceProvider
     {
         $this->app->singleton('command.module.migrate.rollback', function ($app) {
             $repository = $app['migration.repository'];
-            $table = $app['config']['database.migrations'];
+            $migrations = $app['config']['database.migrations'];
+            // Laravel 11+ nests the table name: ['table' => 'migrations', ...].
+            $table = is_array($migrations) ? ($migrations['table'] ?? null) : $migrations;
 
             $migrator = new Migrator($table, $repository, $app['db'], $app['files']);
 
